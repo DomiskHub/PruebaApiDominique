@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba API Dominique</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="conversor">
+      <div class="container">
+        <h1>Conversor de Monedas</h1>
+        <label for="cantidad">Cantidad de Pesos Chilenos:</label>
+        <input type="number" id="cantidad" placeholder="Ingrese la cantidad" />
+        <label for="currency">Elija la moneda a convertir:</label>
+        <select id="currency">
+          <option value="dolar">Dólares estadounidenses (USD)</option>
+          <option value="euro">Euros (EUR)</option>
+          <option value="utm">Unidad Tributaria Mensual (UTM)</option>
+          <option value="uf">Unidad de fomento (UF)</option>
+        </select>
+        <button id="btn">Convertir</button>
+        <div>Resultado: <span id="result"></span></div>
+      </div>
+    </div>
+    <div id="chart"></div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(194, 194, 194);
+}
+
+.conversor {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgb(233, 233, 233);
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#cantidad {
+  width: 378px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#chart {
+  margin-top: 2rem;
+  flex-grow: 1;
+}
