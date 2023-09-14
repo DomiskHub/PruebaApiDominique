@@ -1,3 +1,4 @@
+//Evento para que cargue el grafico apenas abra la pagina
 document.addEventListener("DOMContentLoaded", async () => {
   var chartResult;
   //Traer DOM a JS
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     return data;
   };
-  //Crear funcionalidad
+  //Crear funcionalidad y evento
   const calcularCambio = async () => {
     const valores = await getApi();
     let conversion;
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       ],
       chart: {
         height: 350,
-        type: "line",
+        type: "area",
         zoom: {
           enabled: false,
         },
@@ -78,12 +79,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         curve: "straight",
       },
       title: {
-        text: "Product Trends by Month",
+        text: "Currency by day",
         align: "left",
       },
       grid: {
         row: {
-          colors: ["#f3f3f3", "transparent"],
+          colors: ["#9dfcfb", "transparent"],
           opacity: 0.5,
         },
       },
